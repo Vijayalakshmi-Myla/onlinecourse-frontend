@@ -1,0 +1,22 @@
+{
+  "name": "e-learn-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.1.0",
+    "@supabase/supabase-js": "^2.80.0",
+    "antd": "^5.28.1",
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4.1.17"
+  }
+}
