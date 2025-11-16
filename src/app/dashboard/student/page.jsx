@@ -21,6 +21,7 @@ export default function StudentDashboard() {
   
   // Check for payment success query params
   useEffect(() => {
+    if (typeof window !== "undefined") {
     const paid = searchParams.get("paid");
     const courseId = searchParams.get("courseId");
 
@@ -28,7 +29,8 @@ export default function StudentDashboard() {
       message.success("Payment successful! Course unlocked.");
       router.push("/dashboard");
     }
-  }, [searchParams, router]);
+  }
+}, [searchParams, router]);
 
   // Load dashboard data
   useEffect(() => {
@@ -200,3 +202,4 @@ export default function StudentDashboard() {
     </div>
   );
 }
+
