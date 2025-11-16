@@ -2,6 +2,7 @@
 
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
+export const runtime = "edge";
 
 import { useEffect, useState } from "react";
 import { fetchWithAuth } from "@/lib/api";
@@ -205,5 +206,6 @@ export default function StudentDashboard() {
     </div>
   );
 }
+
 
 
