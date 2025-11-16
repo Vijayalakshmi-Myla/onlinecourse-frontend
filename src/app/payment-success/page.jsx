@@ -1,8 +1,17 @@
 "use client";
 
+"use client";
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+export const runtime = "edge";
+
+
 import { useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Result, Button } from "antd";
+
+
 
 export default function PaymentSuccessPage() {
   const searchParams = useSearchParams();
@@ -42,3 +51,4 @@ export default function PaymentSuccessPage() {
     </div>
   );
 }
+
